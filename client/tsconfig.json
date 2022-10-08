@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,8 +15,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
+    // "baseUrl": "src" // esto se usa para acortar la forma de importar archivos.
   },
   "include": [
     "src"
+    // "**/*.ts",  // de esta forma damos a entender que extenciones queremos que se importen de forma directa.
+    // "**/*.tsx"  // de esta forma damos a entender que extenciones queremos que se importen de forma directa.
   ]
 }
